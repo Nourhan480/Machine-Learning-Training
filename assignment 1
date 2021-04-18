@@ -3,9 +3,9 @@
   "nbformat_minor": 0,
   "metadata": {
     "colab": {
-      "name": "Untitled7.ipynb",
+      "name": "Untitled9.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyPB805F7q8DmrFZ/crY0E+L",
+      "authorship_tag": "ABX9TyO4ks1eMJGG/mdS6h3/XS7r",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -33,19 +33,19 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "YHmt4eFb3ZbJ",
-        "outputId": "42204727-692d-4323-8931-8b83548bb6aa"
+        "id": "tHUoaM76hIVh",
+        "outputId": "42c2a986-7a49-41df-c050-d25902c33a9d"
       },
       "source": [
-        "length1=int(input(\"what's the length of rectangle1\\n\"))"
+        "pocket=int(input(\"enter the pocket number from 0 to 36\\n\"))"
       ],
-      "execution_count": 3,
+      "execution_count": 47,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "what's the length of rectangle1\n",
-            "3\n"
+            "enter the pocket number from 0 to 36\n",
+            "16\n"
           ],
           "name": "stdout"
         }
@@ -54,107 +54,28 @@
     {
       "cell_type": "code",
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "WjdGUSw85ATw",
-        "outputId": "a3c864aa-0ac9-4614-afe5-a4ea7494ebe8"
+        "id": "mOlivLQwhjDO"
       },
       "source": [
-        "width1=int(input(\"what's the width of rectangle1\\n\"))"
+        "if pocket==0:\n",
+        "  print(\"green\")"
       ],
-      "execution_count": 5,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "what's the width of rectangle1\n",
-            "5\n"
-          ],
-          "name": "stdout"
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "tjoWxm3r5EDN",
-        "outputId": "37976b2b-4bab-40f3-eaf1-56bc645651db"
-      },
-      "source": [
-        "length2=int(input(\"what's the length of rectangle2\\n\"))"
-      ],
-      "execution_count": 7,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "what's the length of rectangle2\n",
-            "3\n"
-          ],
-          "name": "stdout"
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "OH0ME_545vNd",
-        "outputId": "170c5620-98c2-4776-f08c-e41ee89cabac"
-      },
-      "source": [
-        "width2=int(input(\"what's the width of rectangle2\\n\"))"
-      ],
-      "execution_count": 10,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "what's the width of rectangle2\n",
-            "6\n"
-          ],
-          "name": "stdout"
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "NT4690eA6G5-"
-      },
-      "source": [
-        "area1=length1*width1"
-      ],
-      "execution_count": 19,
+      "execution_count": 48,
       "outputs": []
     },
     {
       "cell_type": "code",
       "metadata": {
-        "id": "cTcdy0ek6Z-9"
+        "id": "paQEGaSah2SL"
       },
       "source": [
-        "area2=length2*width2"
+        "if 0<pocket<11:\n",
+        "  if pocket%2==0:\n",
+        "    print(\"black\")\n",
+        "  else:\n",
+        "    print(\"red\")"
       ],
-      "execution_count": 20,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "1UG7ARLA6eWE"
-      },
-      "source": [
-        "if area1>area2:\n",
-        "  print(\"area of rectangle1 is greater\")"
-      ],
-      "execution_count": 21,
+      "execution_count": 49,
       "outputs": []
     },
     {
@@ -163,19 +84,22 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "kEH43Csf6wmL",
-        "outputId": "2cd447ef-5de7-484e-c737-95762d3025f2"
+        "id": "d_Y6ceIuiXSY",
+        "outputId": "08471a0c-5687-43db-e346-b6593e771bef"
       },
       "source": [
-        "if area2>area1:\n",
-        "  print(\"area of rectangle2 is greater \")"
+        "if 10<pocket<19:\n",
+        "  if pocket%2==0:\n",
+        "    print(\"red\")\n",
+        "  else:\n",
+        "    print(\"black\")"
       ],
-      "execution_count": 22,
+      "execution_count": 50,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "area of rectangle2 is greater \n"
+            "red\n"
           ],
           "name": "stdout"
         }
@@ -184,19 +108,73 @@
     {
       "cell_type": "code",
       "metadata": {
-        "id": "o9yEkXBu7G8r"
+        "id": "v7AmBANti3wS"
       },
       "source": [
-        "if area1==area2:\n",
-        "  print(\"area of two rectangles are equal\")"
+        "if 18<pocket<29:\n",
+        "  if pocket%2==0:\n",
+        "    print(\"black\")\n",
+        "  else:\n",
+        "    print(\"red\")"
       ],
-      "execution_count": 23,
+      "execution_count": 35,
       "outputs": []
     },
     {
       "cell_type": "code",
       "metadata": {
-        "id": "TVlkVTh37eSY"
+        "id": "8nf2XD4UjpC2"
+      },
+      "source": [
+        "if 28<pocket<37:\n",
+        "  if pocket%2==0:\n",
+        "    print(\"red\")\n",
+        "  else:\n",
+        "    print(\"black\")"
+      ],
+      "execution_count": 36,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hDr613dwkG4M"
+      },
+      "source": [
+        "if pocket<0:\n",
+        "  print(\"error\")"
+      ],
+      "execution_count": 44,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LRL1eb4llG7t",
+        "outputId": "e4422133-9ceb-440c-bf9a-8f0825dfbf74"
+      },
+      "source": [
+        "if pocket>36:\n",
+        "  print(\"error\")"
+      ],
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "error\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "01IkuMpVmjRl"
       },
       "source": [
         ""
